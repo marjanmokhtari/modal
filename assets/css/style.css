@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-image: url(../img/hero.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 117, 234, 0.395);
+    position: absolute;
+}
+
+.box1 {
+    min-height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 200px auto;
+    background-color: rgb(246, 246, 228);
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.box1>h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.btn-open {
+    background-color: rgb(46, 140, 247);
+    border: 1px solid rgb(46, 140, 247);
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 150px;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid rgb(46, 140, 247);
+        color: rgb(46, 140, 247);
+
+    }
+
+
+}
+
+.modal-hide {
+    position: absolute;
+    visibility: hidden;
+
+}
+
+.modal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    background-color: whitesmoke;
+    position: absolute;
+    visibility: visible;
+    width: 100%;
+    height: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    >h2 {
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 2rem;
+    }
+
+    >span {
+        color: red;
+        padding: 5px;
+        font-size: 2rem;
+
+
+    }
+
+
+}
